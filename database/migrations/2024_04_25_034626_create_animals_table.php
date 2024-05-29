@@ -15,11 +15,11 @@ return new class extends Migration
     {
         Schema::create('animals', function (Blueprint $table) {
         $table->string('name');
-        $table->string('bleed');
+        $table->string('breed');
         $table->string('sex');
         $table->string('mass');
         $table->string('birthday');
-        $table->image();
+        $table->string('image_url');
         $table->string('message');
             });
     }

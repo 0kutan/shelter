@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class animalsSeeder extends Seeder
 {
@@ -20,17 +21,59 @@ class animalsSeeder extends Seeder
             'sex' => '男の子',
             'mass' => '',
             'birthday' => '11歳',
-            'image' => '',
-            'message' => '甘えん坊でおもちゃが大好きな子です。'
-    ]);
+            'image_url' => '',
+            'message' => ''
+    ]); 
     DB::table('animals')->insert([
             'name' => '大和',
             'breed' => '',
             'sex' => '男の子',
             'mass' => '',
             'birthday' => '5歳',
-            'image' => '',
-            'message' => '人が大好きな甘えん坊さんです。'
+            'image_url' => '',
+            'message' => ''
+            ]);
+    
+        DB::table('animals')->insert([
+            'name' => 'むさし',
+            'breed' => '',
+            'sex' => '男の子',
+            'mass' => '',
+            'birthday' =>'8歳',
+            'image_url' => '',
+            'message' => ''
+            ]);
+            
+        DB::table('animals')->insert([
+            'name' => 'まる',
+            'breed' => '',
+            'sex' => '男の子',
+            'mass' => '',
+            'birthday' => '10歳',
+            'image_url' => '',
+            'message' => ''
+            
+            ]);
+            
+        DB::table('animals')->insert([
+            'name' => 'ショコラ',
+            'breed' => '',
+            'sex' => '男の子',
+            'mass' => '',
+            'birthday' => '8歳',
+            'image_url' => '',
+            'message' => ''
+            ]);
+            
+        DB::table('animals')->insert([
+            'name' => 'ノア',
+            'breed' => '',
+            'sex' => '女の子',
+            'mass' => '',
+            'birthday' => '5歳',
+            'image_url' => '',
+            'message' => ''
             ]);
     }
-    }
+}
+    

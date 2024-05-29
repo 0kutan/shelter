@@ -11,19 +11,11 @@
         <div class='posts'>
             <div class='post'>
                 @foreach($posts as $post)
-                <h2 class='title'>{{ $post->title }}</h2>
-                <p class='body'>{{ $post->body }}</p>
-                <p class='body'>{{ $post->body }}</p>
-                <p class='body'>{{ $post->body }}</p>
-                <p class='body'>{{ $post->body }}</p>
-                
-                <h2 class='title'>{{ $post->title }}</h2>
-                <p class='body'>{{ $post->body }}</p>
-                <p class='body'>{{ $post->body }}</p>
-                <p class='body'>{{ $post->body }}</p>
-                <p class='body'>{{ $post->body }}</p>
+                <h2 class='title'>{{ $post->name }}</h2>
+                <p class='body'>{{ $post->birthday }}</p>
+            
             </div>
             @endforeach
-        </div class='paginate'>{{ $posts->limks()}}</div>
+        
     </body>
 </html>
