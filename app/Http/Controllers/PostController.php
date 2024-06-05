@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Animal;
 use Cloudinary;
+use App\Models\Category;
 
 class PostController extends Controller
 {

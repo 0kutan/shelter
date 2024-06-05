@@ -16,6 +16,8 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([
             animalsSeeder::class,
+        $this->call(
+            PostSeeder::class)    
         ]);// \App\Models\User::factory(10)->create();
 
         // \App\Models\User::factory()->create([

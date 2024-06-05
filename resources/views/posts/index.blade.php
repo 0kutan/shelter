@@ -13,9 +13,10 @@
                 @foreach($posts as $post)
                 <h2 class='title'>{{ $post->name }}</h2>
                 <p class='body'>{{ $post->birthday }}</p>
+                <p class='body'>{{ $post->sex }}</p>
             
             </div>
             @endforeach
-        
+        <a href="">{{ $post->category->id }}">{{ $post->category->name}}</a>
     </body>
 </html>
